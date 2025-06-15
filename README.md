@@ -30,19 +30,27 @@ git clone https://github.com/amiano4/lamp-stack-boilerplate.git
 cd lamp-stack-boilerplate
 ```
 
-### 2. Start the environment
+### 2. Setup environment variables
+
+A `.env.template` file is included in the repository. Copy it to `.env` and edit as needed:
+
+```bash
+cp .env.template .env
+```
+
+### 3. Start the environment
 
 ```bash
 docker-compose up -d
 ```
 
-### 3. Access services
+### 4. Access services
 
 - **Main web server:** [http://localhost:8080](http://localhost:8080)
 - _(Optional)_ **phpMyAdmin:** [http://localhost:8081](http://localhost:8081) — phpMyAdmin is disabled by default. To enable it, uncomment the `phpmyadmin` service in `docker-compose.yml`.
   (_Refer to `.env` for the correct credentials_)
 
-### 4. Start working on your project
+### 5. Start working on your project
 
 Begin development inside the `projects/` directory. For example:
 
