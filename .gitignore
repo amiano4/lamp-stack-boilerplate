@@ -1,0 +1,33 @@
+# Ignore all contents of the projects directory except index.php and .htaccess
+/projects/*
+!/projects/index.php
+!projects/.htaccess
+
+# Ignore Docker volumes and database data
+/volumes/*
+!/volumes/.gitkeep
+
+# Ignore Composer and Node artifacts
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+
+# Ignore Docker local overrides
+/docker-compose.override.yml
+
+# Ignore IDE/editor configuration
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore temporary and OS-specific files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
